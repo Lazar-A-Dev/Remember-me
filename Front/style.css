@@ -1,0 +1,459 @@
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; 
+    /* This is for the background video */ /* added */
+}
+
+label{
+    color: white;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* Top */
+.top{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    height: 100px;
+    margin: 50px;
+    width: 753.5px;
+    background-color: #7b337d; /* added */
+    opacity: 0.9;
+    border: 1px solid white;
+}
+
+.achImg, img{
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.message-container{
+    color: white;
+}
+
+
+/* Bottom */
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 180px;
+    width: 753.5px;
+    margin: 50px;
+    background-color: #7b337d; /* added */
+    opacity: 0.9;
+    border: 1px solid white;
+   
+}
+
+.bottomSubject{
+    margin: 5px;
+}
+
+.bottomMessage{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomBtn{
+    text-align: center;
+    width: 150px;
+    height: 20px;
+    margin: 5px;
+}
+
+/* Add these styles to your CSS */
+.bottomMessageInput {
+    display: flex;
+    flex-direction: row;
+    resize: none;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid #ccc; /* Add a border for the input box */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    padding: 10px; /* Add padding to give it some spacing */
+    line-height: 1.5; /* Adjust line height for better text appearance */
+    transition: border-color 0.2s; /* Add a transition effect for the border color */
+}
+
+/* Style the input when focused (clicked into) */
+.bottomMessageInput:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Change the border color when focused */
+}
+
+
+/* Bottom */
+
+.logoPic{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.logoPic:hover{
+    opacity: 0.7;
+}
+
+
+.topLab{
+    border: 1px solid black;
+}
+
+.message-container {
+    width: 600px;
+    padding: 10px;
+    overflow: auto;
+}
+  
+
+.middle{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ---------------------------------------------------------------------- left | */
+
+.left{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 200px;
+    height: 450px;
+    background-color: #7b337d; /* added */
+    opacity: 0.9;
+    border: 1px solid white;
+}
+
+.leftSearchBlock{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.leftSearchBlockRow1, .leftSearchBlockRow2{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+
+.leftSearchBlockRow2Input{
+    display: flex;
+    width: 200px;
+}
+
+.leftShowBlock {
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Postavite željenu visinu ovde */
+    overflow: auto;
+}
+
+
+.bPCard{
+    display: flex;
+    flex-direction: column;
+    /* padding: 8px; */
+    border: 1px solid black;
+    margin: 3px;
+    border: 1px solid white;
+}
+
+.leftRow1, .leftRow2, .leftRow3, .leftRow4{
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    justify-content: space-between;
+}
+
+.leftSearchBlockBtn{
+    margin-top: 10px;
+}
+
+.bpPicture{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    padding: 3px;
+}
+
+.leftReturnResultBlock{
+    display: flex;
+    justify-content: center;
+}
+
+/* this part is for the view button on the bought product */
+
+.centerViewBPRow1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.centerViewBPRow2, .centerViewBPRow3, .centerViewBPRow4, .centerViewBPRow5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.centerViewBPRow3{
+    overflow: auto;
+    border: 1px solid black;
+}
+
+
+
+.centerViewBPRow1Picture{
+    display: flex;
+    width: 150px;
+    height: 150px;
+}
+
+.viewProductBtn, .viewRecipeBtn{
+    background-color: yellow;
+}
+
+.viewProductBtn:hover, .deleteProductBtn:hover, .viewRecipeBtn:hover, .deleteRecipeBtn:hover{
+    opacity: 0.7;
+}
+
+.deleteProductBtn, .deleteRecipeBtn{
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.EditProTypeSelect, .editExProSelect{
+    width: 165px;
+}
+
+.editBpBDateInsert, .editBpExDateInsert{
+    width: 156px;
+}
+
+.editProductBtn, .viewProductBtn, .deleteProductBtn, .editRecipeBtn, .viewRecipeBtn, .deleteRecipeBtn{
+    border-radius: 2px; 
+    border: 1px solid white;
+}
+
+/* ---------------------------------------------------------------------- center | */
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid white;
+    margin: 50px;
+    width: 350px;
+    background-color: #13274F;
+    opacity: 0.8;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.centerRow1{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+.addBPBtn, .addRecipeBtn{
+    width: 100px;
+    height: 100px;
+    background: #7b337d;
+    border: 1px solid white;/*added*/
+    color: white;
+
+    opacity: 0.9;
+}
+
+.bpRow1, .bpRow2, .bpRow3, .bpRow4, .bpRow5, .bpRow6, .bpRow7, .bpRow8, .bpRow9, .ingRow1, .ingRow2{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    justify-content: space-between;
+
+}
+
+
+.ProTypeSelect, .exProSelect{
+    width: 165px;
+}
+
+.bpBDateInsert, .bpExDateInsert{
+    width: 156px;
+}
+
+
+/*Right part*/
+.right{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 200px;
+    height: 450px;
+    background-color: #7b337d; /* added */
+    opacity: 0.9;
+    border: 1px solid white;
+}
+
+.productBlock1, .productBlock2, .productBlock3{
+    width: 25px;
+    height: 15px;
+    border-radius: 2px; 
+    border: 1px solid white;
+}
+
+.rRow1, .rRow2, .rRow4, .rRow5, .rRow7, .rRow8, .rRow9, .ingRow3, .ingRow4{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    justify-content: space-between;
+
+}
+
+.rRow3, .rRow6, .ingredient-row, .ingRow5{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+.rRow6{
+    overflow: auto;
+    max-height: 297px;
+}
+
+.ingredient-row{
+    border: 1px solid white;
+    margin-top: 3px;
+}
+
+.rDescInsert, .ingDescInsert{
+    resize: none;
+}
+
+.RecTypeSelect{
+    width: 165px;
+}
+
+.rightSearchBlock{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.rightSearchBlockRow1, .rightSearchBlockRow2{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+
+.rightSearchBlockRow2Input{
+    display: flex;
+    width: 200px;
+}
+
+.rightShowBlock {
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Postavite željenu visinu ovde */
+    overflow: auto;
+}
+
+
+.recCard{
+    display: flex;
+    flex-direction: column;
+    /* padding: 8px; */
+    margin: 3px;
+    border: 1px solid white; 
+}
+
+.rightRow1, .rightRow2, .rightRow3, .rightRow4{
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    justify-content: space-between;
+}
+
+.rightSearchBlockBtn{
+    margin-top: 10px;
+}
+
+.recPicture{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    padding: 3px;
+}
+
+.rightReturnResultBlock{
+    display: flex;
+    justify-content: center;
+}
+
+/*Achievement Top part*/
+.achievement-popup {
+    position: fixed;
+    top: 10px; /* Podešavanje margina sa vrha za lepši izgled */
+    left: 10px; /* Podešavanje margina s leve strane za lepši izgled */
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    z-index: 9999;
+}
+
+.achievement-popup img {
+    max-width: 100px; /* Postavite maksimalnu širinu za sliku */
+    margin-right: 10px; /* Razmak s desne strane slike */
+}
+
+.achievement-popup .popupInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-popup .popupInfo .achName {
+    font-size: 20px; /* Povećajte veličinu fonta za naziv */
+}
+
+.achievement-popup .popupInfo .achDes {
+    font-size: 16px; /* Povećajte veličinu fonta za opis */
+    margin-top: 5px; /* Margina između naziva i opisa */
+}
+
+.hidden {
+    opacity: 0; /* Ako je klasa "hidden" primenjena, postavite "opacity" na 0 (skrivanje) */
+}
